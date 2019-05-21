@@ -297,8 +297,8 @@ table td:first-child {
 
 .footer {
   text-align: center;
-  background-color: var(--primary-color);
-  padding: 2rem;
+  background-color: #ec1d24;
+  padding: 1rem;
   color: white;
 }
 
