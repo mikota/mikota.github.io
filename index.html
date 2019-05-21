@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0079)https://eduneta.vern.hr/vern-student/PorukaPrikaz.aspx?idP=931082&idPP=22974525 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+		<title>Prikaz poruke i obavijesti</title>
+		
+		<meta content="Microsoft Visual Studio.NET 7.0" name="GENERATOR">
+		<meta content="Visual Basic 7.0" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<link href="./Prikaz poruke i obavijesti_files/vern.css" type="text/css" rel="stylesheet">
+		<link href="./Prikaz poruke i obavijesti_files/portal.css" type="text/css" rel="stylesheet">
+		<script language="JavaScript">
+<!--
+
+function redirectOpener(href) {
+	w=self.opener;
+	if (jeOtvorenUProzoru()) {
+			self.close();
+			w.location.href=href;
+	} else {
+		location.href=href;
+	}
+}
+
+function reply(idP,idPP) {
+	redirectOpener("PorukaObavFS.aspx?idP="+idP+"&idPP="+idPP+"&akc=1");
+}
+
+function replyBrza(idP) {
+    redirectOpener("Poruka1na1.aspx?idP=" + idP);
+}
+
+function forward(idP,idPP) {
+	redirectOpener("PorukaObavFS.aspx?idP="+idP+"&idPP="+idPP+"&akc=2");
+}
+
+function jeOtvorenUProzoru() {
+	if (location.href.indexOf('nImp=')>-1) {
+		return 0;
+	} else {
+		//sve osim imperativnih se otvaraju u prozoru!
+		return 1;
+	}
+	
+	// ovo ne radi zbor permission denied: vidi u jeOpenerVanjski
+	if (self.opener)
+		return (!jeOpenerVanjski());
+	else
+		return 0;
+}
+
+function jeOpenerVanjski() {
+	//greška se javlja pri dohvatu location ako je on na drugom site-u! trebalo bi onerror ili slično
+	return (self.opener.location.href.toLowerCase().indexOf('vern.hr')>-1);
+}
+
+function zatvori(idPP) {
+	var retURL;
+	if (jeOtvorenUProzoru()) {
+		retURL=escape(self.opener.location.href);
+	} else {
+		retURL="Default.aspx";
+	}
+	
+	if (idPP!=0) {
+		redirectOpener("PorukaProcitana.aspx?idPP="+idPP+"&retURL="+retURL);
+	}
+	else
+		self.close();
+}
+
+//-->
+		</script>
+      <style type="text/css">
+          .style1
+          {
+              width: 100%;
+          }
+      </style>
+</head>
+	<body>
+		<form name="Form1" method="post" action="https://eduneta.vern.hr/vern-student/PorukaPrikaz.aspx?idP=931082&amp;idPP=22974525" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTU2MTkyNjI2MmRkFir8JJ7aI/1k9jfnhaAIQ3o3yws=">
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="029020EF">
+			
+			
+			<table id="Table1" cellspacing="1" cellpadding="1">
+				<tbody><tr>
+					<td valign="top">
+						<table id="Table2" border="0">
+							<tbody><tr>
+								<td style="WIDTH: 85px; HEIGHT: 18px">Pošiljatelj:</td>
+								<td style="HEIGHT: 18px">
+									<span id="labPosiljatelj">IRENA MEDVEŠEK</span></td>
+								<td rowspan="4" align="right" valign="top"><img src="./Prikaz poruke i obavijesti_files/0.jpg" id="imgOsoba" width="100"></td>
+							</tr>
+        <tr>
+          <td style="WIDTH: 85px; HEIGHT: 18px" valign="top">Primatelj:</td>
+          <td style="HEIGHT: 18px">
+<a id="lnkPrimatelj" href="https://eduneta.vern.hr/vern-student/PorukaPrimatelji.aspx?idP=931082">Grupa primatelja</a></td></tr>
+							<tr>
+								<td style="WIDTH: 85px" valign="top"> Poslano:</td>
+								<td valign="top">
+									<span id="labVrijeme">20.05.2019 15:00</span></td>
+							</tr>
+							<tr>
+								<td style="WIDTH: 85px; HEIGHT: 18px">Naslov:</td>
+								<td style="HEIGHT: 18px">
+									<span id="labTema" style="font-weight:bold;">Podsjetnik o nastavi 22. svibnja</span>&nbsp;</td>
+							</tr>
+							<tr>
+								<td valign="top" style="WIDTH: 87px"><span id="labTekstPorukeCap">Poruka</span>:<br>
+</td>
+								<td valign="top" colspan="2">
+									<span id="labTekstPoruke">Dragi studenti,<div><br></div><div>ovom vas porukom obavještavamo da u srijedu, 22. svibnja neće biti nastave zbog odlaska profesora na edukacijsku konferenciju. O nadoknadi ćemo se dogovoriti naknadno. Od četvrtka će se nastava održati prema rasporedu.</div><div><br></div><div>Srdačno,</div><div>Irena Medvešek</div></span></td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+			</tbody></table>
+			<p>
+				<a id="lnkReply" href="javascript:reply(931082,22974525)">Odgovori</a>&nbsp;&nbsp;&nbsp;&nbsp;
+				<a id="lnkForward" href="javascript:forward(931082,22974525)">Proslijedi</a></p>
+				<p align="center"><a id="lnkZatvori" href="javascript:zatvori(22974525)">Zatvori i označi kao pročitano</a></p>
+				<p align="center"><a href="javascript:self.close()" id="lnkZatvoriOstavi">Zatvori</a></p>
+				
+		</form>
+	
+</body></html>
